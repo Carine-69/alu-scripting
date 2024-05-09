@@ -1,4 +1,3 @@
 #!/usr/bin/env ruby
-regex = School
-puts ARGV[0].scan(regex).join
+puts ARGV[0].scan(/School/).join
 

@@ -12,11 +12,11 @@ string = ARGV[0]
 # Define the regular expression pattern
 pattern = /School/
 
-# Check if the string matches the pattern
-match = string.match(pattern)
+# Scan the string for all occurrences of the pattern
+matches = string.scan(pattern)
 
-# If there's a match, print the matched text
-if match
-  puts match[0]
+# Print all the matched occurrences
+matches.each do |match|
+  puts match
 end
 
